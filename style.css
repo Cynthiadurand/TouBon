@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 header {
     border-bottom: 1px solid #745d5268;
     padding: 9px 0;
@@ -95,15 +96,17 @@ a {
 }
 
 /* GAP */
+.gap16 {
+    gap: 16px;
+}
 
 .gap32 {
     gap: 32px;
 }
 
-.gap16 {
-    gap: 16px;
+.gap40{
+    gap: 40px;
 }
-
 
 .card {
     background-color: #ffe5f18b;
@@ -117,12 +120,15 @@ a {
     color: rgb(57, 57, 57);
 }
 
+/* container */
+
 .container {
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 16px;
 }
+
 
 .responsive {
     display: block;
@@ -131,6 +137,10 @@ a {
 
 
 /* WIDTH */
+
+.w10{
+    width: 10%;
+}
 
 .w20{
     width: 20%;
@@ -145,6 +155,10 @@ a {
     width: 30%;
 }
 
+.w35{
+    width: 35%;
+}
+
 .w50 {
     width: 50%;
 }
@@ -156,7 +170,9 @@ a {
 .w90 {
     width: 90%;
 }
-
+.w100{
+    width: 100%;
+}
 /* TOP */
 
 .top10 {
@@ -171,25 +187,35 @@ a {
     margin-top: 50px;
 }
 
+.top70{
+    margin-top: 70px;
+}
+
 /* Margin */
 
 .left {
     margin-left: 50%;
 }
 
+
 /* COLOR */
 .black {
     color: #4B352A;
 }
-
 
 .logo {
     width: 90px;
     border-radius: 110px 100px;
 }
 
-.bgRed {
-    background-color: red;
+.bgSection {
+    background-color: #ffe5f1d5;
+    border-radius: 40px;
+    padding: 100px ;
+}
+
+.white {
+    color: white;
 }
 
 
@@ -208,4 +234,88 @@ border-radius: 20px;
 
 .underline{
     border-bottom: 1px solid #745d5268;
+}
+
+.cardProduit{
+    width: 28%;
+}
+
+.card-image{
+    position: relative;
+    height: 250px;
+    box-shadow: 2px 2px 3px rgb(190, 190, 190)
+}
+.card-description{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #00000089;
+    height: 100%;
+    padding: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.cardProduit:hover 
+.card-description{
+    opacity: 1;
+}
+
+.cardAvis{
+    background-color: #ffe5f1;
+    border-radius: 15px;
+    padding: 20px 15px;
+
+
+}
+.avis{
+    width: 15%;
+    height: 15%;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+
+footer{
+    padding: 50px;
+     background-color: #291d17e6;
+}
+
+.inlineBlock{
+    display: inline;
+}
+
+.imgFooter{
+    width: 40px;
+}
+
+.responsive {
+    display: block;
+    width: 100%
+}
+
+/* responsive tablette */
+@media all and (max-width: 900px) {
+
+    .medium-4 {
+        width: 40%;}
+        
+        .medium-12 {
+            width: 100%;
+        }
+
+}
+
+/* responsive smartphone */
+@media all and (max-width: 600px) {
+   
+    .small-12 {
+        width: 100%;
+    }
+    .small-6 {
+        width: 50%;
+    }
 }
