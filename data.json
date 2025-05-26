@@ -2,11 +2,25 @@
   "nomCommercial": "TouBon - Pâtisserie à Auxerre",
   "phraseAccroche": "Succombez à la délicatesse sucrée avec TouBon, votre pâtisserie gourmande à Auxerre",
   "texteAppelAction": "Découvrez nos créations",
+
   "avantagesClients": [
-    "Large sélection de pâtisseries artisanales",
-    "Ingrédients de qualité pour des saveurs authentiques",
-    "Ambiance chaleureuse pour une expérience gourmande unique"
+    {
+      "description": "Large sélection de pâtisseries artisanales",
+      "image":"asset/material-symbols--bakery-dining.png"
+    },
+
+    {
+      "description":"Ingrédients de qualité pour des saveurs authentiques",
+      "image":"asset/material-symbols--local-dining.png"
+    },
+    
+    {
+      "description":"Ambiance chaleureuse pour une expérience gourmande unique",
+      "image":"asset/material-symbols--local-cafe.png"
+    }
+    
   ],
+
   "produits": [
     {
       "nom": "Éclair au Chocolat",
@@ -32,20 +46,29 @@
       "nom": "Chausson aux Pommes",
       "description": "Retrouvez le plaisir réconfortant de notre chausson aux pommes. Une pâte feuilletée croustillante et une garniture généreuse aux pommes fondantes.",
       "imageurl": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/chausson-pommes.webp"
+    },
+    {
+      "nom": "Fraisier",
+      "description":"Un délicieux fraisier à deux étages et garni de généreuses couches de crème chantilly et de fraises fraîches. Des fraises entières couronnent le dessus du gâteau, ajoutant une touche éclatante et appétissante.",
+      "imageurl":"https://chatgpt.com/backend-api/public_content/enc/eyJpZCI6Im1fNjgzNDVkNzYzMjRjODE5MTg5NDdiZjVmYjM3MDUzNTI6ZmlsZV8wMDAwMDAwMDQ1OTg2MjQ2YTdmNjNlZmZmYzIyOWZmNCIsInRzIjoiNDg1NjI4IiwicCI6InB5aSIsInNpZyI6IjcwZWVhNTU3YjY4ZTM4NGQ5ZGQ2MjQ3N2ZhOTQzZDI3Yjc2MzViNDdiZWE1MzU5MTFjY2VmYjBhYmY2NjkyNTYiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsfQ=="
     }
+
   ],
   "services": [
     {
       "nom": "Gâteaux Sur Mesure",
-      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables."
+      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables.",
+      "image":"https://www.elizabeths.fr/wp-content/uploads/2023/07/gateau-sur-mesure-1.jpeg"
     },
     {
       "nom": "Cours de Pâtisserie",
-      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations."
+      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations.",
+      "image":"https://cdn.generationvoyage.fr/2022/05/Capture-de%CC%81cran-2022-05-23-a%CC%80-10.40.23.png"
     },
     {
       "nom": "Service Traiteur",
-      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions."
+      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions.",
+      "image":"https://cdn0.mariages.net/vendor/5891/3_2/960/jpg/20190912-143636_3_25891-164448001293638.jpeg"
     }
   ],
   "temoignages": [
