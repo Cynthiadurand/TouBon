@@ -5,18 +5,18 @@ fetch('data.json')
         afficherProduits(data.produits)
         afficherServices(data.services)
         afficherTemoignages(data.temoignages)
+        afficherAvantages(data.avantagesClients)
     });
-
 
 
 //rôle : afficher les cartes produits
 //Paramètre :tableau des produits
 //retourne : rien
 function afficherProduits(tableauProduits) {
-    //boucle
+    //boucle pour récupérer les objets 1 par 1
     tableauProduits.forEach(produit => {
         document.getElementById("cardProduits").innerHTML += `
-                <div class="cardProduit top70">
+                <div class="cardProduit top65">
                     <div class="card-image">
                         <img src="${produit.imageurl}" class="img" alt="">
                         <div class="card-description">
@@ -47,16 +47,20 @@ function afficherServices(tableauServices) {
     });
 }
 
-//rôle: afficher les avis
+
+//rôle: afficher les avis clients
 //paramètres: tableau des avis
 //retourne: rien 
-function afficherTemoignages(tableauAvis){
+
+
+function afficherTemoignages(tableauAvis) {
     tableauAvis.forEach(avis => {
-        document.getElementById("cardAvis").innerHTML+=`
+        let etoile="★".repeat(avis.note)+"☆".repeat(5-avis.note)
+        document.getElementById("cardAvis").innerHTML += `
         <div class="w30 cardAvis">
                     <div class="flex gap40 alignCenter leftAvis">
                         <p>${avis.prenom}</p>
-                        <p>${avis.note}</p>
+                        <p>${etoile}</p>
                     </div>
 
 
@@ -67,6 +71,20 @@ function afficherTemoignages(tableauAvis){
                     </div>
                 </div>
         `
-        
+
+    });
+}
+//rôle: afficher les avantages client
+//parametre: tableau avantages client
+//retourne: rien
+function afficherAvantages(tableauAvantages) {
+    tableauAvantages.forEach(avantage => {
+        document.getElementById("avantages").innerHTML += `
+        <div class="w30 justifyCenter textCenter flex">
+                    <img src="${avantage.image}" class="w25" alt="">
+                    <p class="top20">${avantage.description}</p>
+        </div>
+        `
+
     });
 }

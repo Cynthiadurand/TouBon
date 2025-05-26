@@ -6,19 +6,18 @@
   "avantagesClients": [
     {
       "description": "Large sélection de pâtisseries artisanales",
-      "image":"asset/material-symbols--bakery-dining.png"
+      "image":"https://cdn-icons-png.flaticon.com/128/6692/6692203.png"
     },
 
     {
       "description":"Ingrédients de qualité pour des saveurs authentiques",
-      "image":"asset/material-symbols--local-dining.png"
+      "image":"https://cdn-icons-png.flaticon.com/128/4299/4299728.png"
     },
     
     {
       "description":"Ambiance chaleureuse pour une expérience gourmande unique",
-      "image":"asset/material-symbols--local-cafe.png"
+      "image":"https://cdn-icons-png.flaticon.com/128/8901/8901002.png"
     }
-    
   ],
 
   "produits": [
