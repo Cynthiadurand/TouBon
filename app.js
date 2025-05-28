@@ -36,11 +36,11 @@ function afficherServices(tableauServices) {
     tableauServices.forEach(service => {
         document.getElementById("cardServices").innerHTML += `
         <div class="w30 card">
-                    <div>
-                        <img src= ${service.image} class="img" alt="">
-                    </div>
-                    <h3 class="top20"> ${service.nom} </h3>
-                    <P class="top20">${service.description}</P>
+            <div>
+                 <img src= ${service.image} class="img" alt="">
+                </div>
+                <h3 class="top20"> ${service.nom} </h3>
+                <P class="top20">${service.description}</P>
         </div>
         `
 
