@@ -234,9 +234,19 @@ a {
 .white {
     color: white;
 }
-
-.white:hover {
+.animation{
+    color: white;
+}
+.animation:hover {
     color: black;
+}
+
+.brown{
+    color: #4B352A;
+}
+
+.brown:hover{
+    color: #ff93c5;
 }
 
 .logo {
